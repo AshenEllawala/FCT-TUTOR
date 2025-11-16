@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fffce5 0%, #ffffff 100%);
+
+
+
+    min-height: 100vh;
+    padding: 0;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 40px 20px;
+}
+
+.registration-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 60px 80px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+    background: #f8f5ff;
+    color: #666;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff8c42;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+button {
+    background: #ff8a00;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 125px;
+}
+
+
+.submit-btn {
+    background: #ff8a00;
+    color: white;
+}
+
+.submit-btn:hover {
+    background:  #ffa733;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 140, 66, 0.3);
+}
+
+.clear-btn:hover {
+    background: #ffa733;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 167, 38, 0.3);
+}
+*/
+.clear-btn {
+    background: #ff8a00;
+    color: white;
+}
+
+
+
+.success-message {
+    display: none;
+    background: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: slideDown 0.3s ease;
+}
+
+.success-message.show {
+    display: block;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .registration-box {
+        padding: 40px 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
