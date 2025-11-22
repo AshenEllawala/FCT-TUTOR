@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCT Tutor</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/f_tutor.css" />
+</head>
+<body>
+  <header class="navbar">
+   <a href="login.php"><div class="logo"><img src="images/logo.png" alt="Logo"></div></a> 
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" >About</a>
+      <a href="find_tutor.html"class= "active">Find Tutors</a>
+      <a href="sessions.html">Sessions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="register-btn">Register</button>
+  </header>
+
+
+
+  <!-- SEARCH & FILTERS -->
+    <section class="filter-section">
+        <button class="btn-filter">
+            All <i class="ph ph-caret-down"></i>
+        </button>
+
+        <div class="search-container">
+            <i class="ph ph-magnifying-glass search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search for subjects..." id="searchInput">
+        </div>
+
+        <button class="btn-filter">
+            Sort By Subject <i class="ph ph-caret-down"></i>
+        </button>
+    </section>
+
+
+
+
+     <!-- COURSE GRID -->
+    <section class="grid-container" id="cardsGrid">
+        
+        <!-- Card 1 -->
+        <div class="course-card" data-title="Mathematics For Technology">
+            <div class="card-image-wrapper">
+                <img src="images/maths.jpg" alt="Mathematics For Technology" class="card-image">
+                <div class="placeholder-gradient">
+                    <i class="ph ph-function placeholder-icon"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2>Mathematics For Technology</h2>
+                <i class="ph ph-arrow-right hover-arrow"></i>
+                
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="course-card" data-title="Physics For Technology">
+            <div class="card-image-wrapper">
+               <img src="images/p6.png" alt="Mathematics For Technology" class="card-image">
+                <div class="placeholder-gradient">
+                    <i class="ph ph-atom placeholder-icon"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2>Physics For Technology</h2>
+                <i class="ph ph-arrow-right hover-arrow"></i>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="course-card" data-title="Statics For Technology">
+            <div class="card-image-wrapper">
+               <img src="images/stat.png" alt="Mathematics For Technology" class="card-image">
+                <div class="placeholder-gradient">
+                    <i class="ph ph-scales placeholder-icon"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2>Statics For Technology</h2>
+                <i class="ph ph-arrow-right hover-arrow"></i>
+            </div>
+        </div>
+             <!-- Card 5 -->
+        <div class="course-card" data-title="Structure Programming">
+            <div class="card-image-wrapper">
+               <img src="images/sp.png" alt="Mathematics For Technology" class="card-image">
+                <div class="placeholder-gradient">
+                    <i class="ph ph-code placeholder-icon"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2>Structured Programming</h2>
+                <i class="ph ph-arrow-right hover-arrow"></i>
+            </div>
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="course-card" data-title="Computer Network">
+            <div class="card-image-wrapper">
+               <img src="images/net.png" alt="Mathematics For Technology" class="card-image">
+                <div class="placeholder-gradient">
+                    <i class="ph ph-globe placeholder-icon"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h2>Computer Network</h2>
+                <i class="ph ph-arrow-right hover-arrow"></i>
+            </div>
+        </div>
+
+   
+    </section>
+    
+
+  <script src="js/find_tutor.js"></script>
+</body>
+</html>

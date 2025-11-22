@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Select User Type</title>
+<link rel="stylesheet" href="css/user_role.css" />
+</head>
+<body>
+<div class="role-container">
+    <h1 style="font-weight: 550;">Select Your Role</h1>
+
+
+    <div class="role-box">
+        <button class="role-btn" onclick="selectRole('student')" href="login.php?role=student">
+            I am a Student
+        </button>
+        <button class="role-btn" onclick="selectRole('tutor')" href="login.php?role=tutor">
+            I am a Tutor
+        </button>
+    </div>
+</div>
+
+
+
+<script src="js/user_role.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* ================= MATHS TUTOR PAGE STYLES ================= */
+
+/* Main Content Layout */
+.main-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 120px 80px 60px;
+    background: linear-gradient(135deg, #fffce5 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+/* Back Navigation */
+.back-navigation {
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #000000;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: #ff8a00;
+    color: #fff;
+    transform: translateX(-5px);
+    box-shadow: 0 4px 12px rgba(255, 138, 0, 0.3);
+}
+
+.back-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.back-btn:hover svg {
+    transform: translateX(-3px);
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h1 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Tutor Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Tutor Card */
+.tutor-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.tutor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: #ff8a00;
+}
+
+/* Tutor Avatar */
+.tutor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff8a00 0%, #ffb84d 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(255, 138, 0, 0.2);
+}
+
+.tutor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Default avatar icon when no image */
+.tutor-avatar:empty::before {
+    content: "👤";
+    font-size: 40px;
+}
+
+/* Tutor Info */
+.tutor-info {
+    text-align: center;
+}
+
+.tutor-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.tutor-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* View Profile Button */
+.view-profile-btn {
+    background: #ff8a00;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(255, 138, 0, 0.2);
+}
+
+.view-profile-btn:hover {
+    background: #ff7700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 138, 0, 0.3);
+}
+
+.view-profile-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 120px 20px 40px;
+    }
+
+    .section-header h1 {
+        font-size: 28px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h1 {
+        font-size: 24px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
