@@ -1,0 +1,339 @@
+/* ================= HOME PAGE ENHANCEMENTS ================= */
+
+/* ================= STATS SECTION ================= */
+.stats-section {
+    padding: 60px 80px;
+    background: #fff;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #fffce5 0%, #ffffff 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 138, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff8a00;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* ================= SUBJECTS SECTION ================= */
+.subjects-section {
+    padding: 80px 80px;
+    background: linear-gradient(180deg, #ffffff 0%, #fffce5 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subject-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.subject-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: #ff8a00;
+}
+
+.subject-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.subject-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subject-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    color: #ff8a00;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #ff7700;
+    transform: translateX(5px);
+    display: inline-block;
+}
+
+/* ================= HOW IT WORKS SECTION ================= */
+.how-it-works {
+    padding: 80px 80px;
+    background: #fff;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    background: linear-gradient(135deg, #fffce5 0%, #ffffff 100%);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 138, 0, 0.2);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff8a00 0%, #ffb84d 100%);
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3);
+}
+
+.step-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.step-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.step-arrow {
+    font-size: 36px;
+    color: #ff8a00;
+    font-weight: 700;
+}
+
+/* ================= TESTIMONIALS SECTION ================= */
+.testimonials-section {
+    padding: 80px 80px;
+    background: linear-gradient(180deg, #fffce5 0%, #ffffff 100%);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.quote-icon {
+    font-size: 60px;
+    color: #ff8a00;
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.student-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff8a00 0%, #ffb84d 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.student-info h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.student-info p {
+    font-size: 13px;
+    color: #999;
+}
+
+/* ================= CTA ENHANCEMENTS ================= */
+.cta-button {
+    background: #fff;
+    color: #ff8a00;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 768px) {
+    .stats-section,
+    .subjects-section,
+    .how-it-works,
+    .testimonials-section {
+        padding: 60px 20px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .subjects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .step-arrow {
+        transform: rotate(90deg);
+        font-size: 28px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .step-card {
+        min-width: 100%;
+    }
+}

@@ -3,42 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FCT Tutor</title>
+  <title>About Us - FCT Tutor</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
-<body style="background: linear-gradient(135deg, #fffce5 0%, #ffffff 100%); min-height: 100vh;">
+<body>
   <header class="navbar">
-    <a href="login.html"><div class="logo"><img src="images/logo.png" alt="Logo"></div></a> 
+    <a href="index.html"><div class="logo"><img src="images/logo.png" alt="Logo"></div></a> 
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="about.html" class= "active">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="find_tutor.html">Find Tutors</a>
       <a href="sessions.html">Sessions</a>
       <a href="contact.html">Contact</a>
-      
     </nav>
-     <a href="user_role.html"><button class="register-btn">Register</button></a>
+    <a href="user_role.html"><button class="register-btn">Register</button></a>
   </header>
 
-   <section style="max-width: 900px; margin: 120px auto 60px; padding: 40px 30px; text-align: center; font-family: 'Poppins', sans-serif; background: #ffffff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
-  
-  <h2 style="font-size: 36px; color: #111; margin-bottom: 20px; position: relative; display: inline-block;">
-    About Us
-    
-  </h2>
-  
-  <p style="font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-content">
+      <h1>About FCT Tutor</h1> 
+      <p>Empowering students with personalized learning experiences</p>
+    </div>
+  </section>
 
-  Tutor is an interactive learning platform connecting students with expert tutors. We provide personalized lessons, quality resources, and a user-friendly interface to help learners succeed. This project was developed by our dedicated group members: Ellawala L.S.A, Wijewardhana N.P, Nadeeshani S.Y.A, Perera P.S.A, Padmakumara H.G.M.T, Gunasiri M.G.S.S, Aththanagoda M.M, and Kalansooriya P.M.
-  </p>
-  
-  <p style="font-size: 16px; color: #555; line-height: 1.8;">
-    Whether you're preparing for exams, improving skills, or exploring new subjects, TutorHub supports your journey 
-    with trusted tutors and engaging content.
-  </p>
+  <!-- Mission & Vision Section -->
+  <section class="mission-vision-section">
+    <div class="container">
+      <div class="mission-vision-grid">
+        <div class="card mission-card">
+          <div class="card-icon">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+              <circle cx="25" cy="25" r="24" stroke="#ff8a00" stroke-width="2"/>
+              <path d="M25 15v20M15 25h20" stroke="#ff8a00" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h2>Our Mission</h2>
+          <p>To provide an interactive learning platform that connects students with expert tutors, offering personalized lessons and quality resources in a user-friendly environment.</p>
+        </div>
+
+        <div class="card vision-card">
+          <div class="card-icon">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+              <path d="M25 10l5 15h16l-13 9 5 15-13-9-13 9 5-15-13-9h16z" fill="#ff8a00"/>
+            </svg>
+          </div>
+          <h2>Our Vision</h2>
+          <p>To become the leading educational platform that transforms learning experiences, helping students excel academically and reach their full potential through trusted tutors and engaging content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">What We Offer</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Expert Tutors</h3>
+          <p>Connect with qualified tutors across various subjects and disciplines</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Personalized Learning</h3>
+          <p>Customized lesson plans tailored to your learning style and pace</p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Track Progress</h3>
+          <p>Monitor your learning journey and celebrate achievements</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
 
-</section>
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2>Ready to Start Learning?</h2>
+    <p>Join FCT Tutor today and connect with expert tutors</p>
+    <img src="images/w_logo.png" alt="FCT Tutor" class="cta-logo">
+    <div class="footer-bottom">
+      <p>&copy; 2025 FCT Tutor. All rights reserved.</p>
+    </div>
+  </section>
 
   <script src="js/script.js"></script>
 </body>

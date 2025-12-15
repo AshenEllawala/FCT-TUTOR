@@ -3,22 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FCT Tutor</title>
+  <title>My Sessions - FCT Tutor</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sessions.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
 </head>
 <body>
   <header class="navbar">
-    <a href="login.html"><div class="logo"><img src="images/logo.png" alt="Logo"></div></a> 
+    <a href="index.html"><div class="logo"><img src="images/logo.png" alt="Logo"></div></a> 
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="about.html" >About</a>
+      <a href="about.html">About</a>
       <a href="find_tutor.html">Find Tutors</a>
-      <a href="sessions.html"class= "active">Sessions</a>
+      <a href="sessions.html" class="active">Sessions</a>
       <a href="contact.html">Contact</a>
     </nav>
-     <a href="user_role.html"><button class="register-btn">Register</button></a>
+    <a href="user_role.html"><button class="register-btn">Register</button></a>
   </header>
 
-  <script src="js/script.js"></script>
+  <!-- Sessions Header -->
+  <section class="sessions-header">
+    <div class="header-content">
+      <h1>My Sessions</h1>
+      <p>Manage your tutoring sessions and track your learning progress</p>
+    </div>
+  </section>
+
+  <!-- Session Tabs -->
+  <section class="sessions-tabs">
+    <button class="tab-btn active" data-tab="upcoming">
+      <i class="ph ph-calendar"></i> Upcoming
+    </button>
+    <button class="tab-btn" data-tab="completed">
+      <i class="ph ph-check-circle"></i> Completed
+    </button>
+    <button class="tab-btn" data-tab="cancelled">
+      <i class="ph ph-x-circle"></i> Cancelled
+    </button>
+  </section>
+
+  <!-- Sessions Container -->
+  <section class="sessions-container">
+    
+    <!-- Upcoming Sessions -->
+    <div class="tab-content active" id="upcoming">
+      <div class="sessions-grid">
+        
+        <!-- Session Card 1 -->
+        <div class="session-card">
+          <div class="session-header">
+            <div class="session-subject">
+              <i class="ph ph-function"></i>
+              <span>Mathematics For Technology</span>
+            </div>
+            <span class="session-status upcoming">Upcoming</span>
+          </div>
+          <div class="session-body">
+            <div class="tutor-info">
+              <div class="tutor-avatar">JD</div>
+              <div class="tutor-details">
+                <h3>John Doe</h3>
+                <p>Mathematics Expert • 4.9 ⭐</p>
+              </div>
+            </div>
+            <div class="session-info">
+              <div class="info-item">
+                <i class="ph ph-calendar-blank"></i>
+                <span>Dec 12, 2025</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-clock"></i>
+                <span>2:00 PM - 3:30 PM</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-map-pin"></i>
+                <span>Library Room 204</span>
+              </div>
+            </div>
+          </div>
+          <div class="session-footer">
+            <button class="btn-secondary">Reschedule</button>
+            <button class="btn-primary">Join Session</button>
+          </div>
+        </div>
+
+        <!-- Session Card 2 -->
+        <div class="session-card">
+          <div class="session-header">
+            <div class="session-subject">
+              <i class="ph ph-atom"></i>
+              <span>Physics For Technology</span>
+            </div>
+            <span class="session-status upcoming">Upcoming</span>
+          </div>
+          <div class="session-body">
+            <div class="tutor-info">
+              <div class="tutor-avatar">SM</div>
+              <div class="tutor-details">
+                <h3>Sarah Miller</h3>
+                <p>Physics Specialist • 4.8 ⭐</p>
+              </div>
+            </div>
+            <div class="session-info">
+              <div class="info-item">
+                <i class="ph ph-calendar-blank"></i>
+                <span>Dec 14, 2025</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-clock"></i>
+                <span>10:00 AM - 11:30 AM</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-map-pin"></i>
+                <span>Science Lab 3</span>
+              </div>
+            </div>
+          </div>
+          <div class="session-footer">
+            <button class="btn-secondary">Reschedule</button>
+            <button class="btn-primary">Join Session</button>
+          </div>
+        </div>
+
+        <!-- Session Card 3 -->
+        <div class="session-card">
+          <div class="session-header">
+            <div class="session-subject">
+              <i class="ph ph-code"></i>
+              <span>Structured Programming</span>
+            </div>
+            <span class="session-status upcoming">Upcoming</span>
+          </div>
+          <div class="session-body">
+            <div class="tutor-info">
+              <div class="tutor-avatar">AK</div>
+              <div class="tutor-details">
+                <h3>Alex Kumar</h3>
+                <p>Programming Expert • 5.0 ⭐</p>
+              </div>
+            </div>
+            <div class="session-info">
+              <div class="info-item">
+                <i class="ph ph-calendar-blank"></i>
+                <span>Dec 15, 2025</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-clock"></i>
+                <span>3:00 PM - 4:30 PM</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-map-pin"></i>
+                <span>Computer Lab 1</span>
+              </div>
+            </div>
+          </div>
+          <div class="session-footer">
+            <button class="btn-secondary">Reschedule</button>
+            <button class="btn-primary">Join Session</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Completed Sessions -->
+    <div class="tab-content" id="completed">
+      <div class="sessions-grid">
+        
+        <!-- Completed Session 1 -->
+        <div class="session-card">
+          <div class="session-header">
+            <div class="session-subject">
+              <i class="ph ph-function"></i>
+              <span>Mathematics For Technology</span>
+            </div>
+            <span class="session-status completed">Completed</span>
+          </div>
+          <div class="session-body">
+            <div class="tutor-info">
+              <div class="tutor-avatar">JD</div>
+              <div class="tutor-details">
+                <h3>John Doe</h3>
+                <p>Mathematics Expert • 4.9 ⭐</p>
+              </div>
+            </div>
+            <div class="session-info">
+              <div class="info-item">
+                <i class="ph ph-calendar-blank"></i>
+                <span>Dec 5, 2025</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-clock"></i>
+                <span>2:00 PM - 3:30 PM</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-check-circle"></i>
+                <span>Session Completed</span>
+              </div>
+            </div>
+          </div>
+          <div class="session-footer">
+            <button class="btn-secondary">Rate Tutor</button>
+            <button class="btn-primary">Book Again</button>
+          </div>
+        </div>
+
+        <!-- Completed Session 2 -->
+        <div class="session-card">
+          <div class="session-header">
+            <div class="session-subject">
+              <i class="ph ph-globe"></i>
+              <span>Computer Network</span>
+            </div>
+            <span class="session-status completed">Completed</span>
+          </div>
+          <div class="session-body">
+            <div class="tutor-info">
+              <div class="tutor-avatar">EM</div>
+              <div class="tutor-details">
+                <h3>Emma White</h3>
+                <p>Network Specialist • 4.7 ⭐</p>
+              </div>
+            </div>
+            <div class="session-info">
+              <div class="info-item">
+                <i class="ph ph-calendar-blank"></i>
+                <span>Dec 1, 2025</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-clock"></i>
+                <span>11:00 AM - 12:30 PM</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-check-circle"></i>
+                <span>Session Completed</span>
+              </div>
+            </div>
+          </div>
+          <div class="session-footer">
+            <button class="btn-secondary">Rate Tutor</button>
+            <button class="btn-primary">Book Again</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Cancelled Sessions -->
+    <div class="tab-content" id="cancelled">
+      <div class="sessions-grid">
+        
+        <!-- Cancelled Session 1 -->
+        <div class="session-card">
+          <div class="session-header">
+            <div class="session-subject">
+              <i class="ph ph-scales"></i>
+              <span>Statics For Technology</span>
+            </div>
+            <span class="session-status cancelled">Cancelled</span>
+          </div>
+          <div class="session-body">
+            <div class="tutor-info">
+              <div class="tutor-avatar">MJ</div>
+              <div class="tutor-details">
+                <h3>Mike Johnson</h3>
+                <p>Engineering Expert • 4.6 ⭐</p>
+              </div>
+            </div>
+            <div class="session-info">
+              <div class="info-item">
+                <i class="ph ph-calendar-blank"></i>
+                <span>Dec 3, 2025</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-clock"></i>
+                <span>1:00 PM - 2:30 PM</span>
+              </div>
+              <div class="info-item">
+                <i class="ph ph-x-circle"></i>
+                <span>Cancelled by tutor</span>
+              </div>
+            </div>
+          </div>
+          <div class="session-footer">
+            <button class="btn-secondary">View Details</button>
+            <button class="btn-primary">Book Again</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="quick-stats">
+    <div class="stat-card">
+      <i class="ph ph-calendar-check"></i>
+      <div class="stat-info">
+        <h3>12</h3>
+        <p>Total Sessions</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <i class="ph ph-clock-clockwise"></i>
+      <div class="stat-info">
+        <h3>18</h3>
+        <p>Hours Learned</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <i class="ph ph-users-three"></i>
+      <div class="stat-info">
+        <h3>5</h3>
+        <p>Tutors Met</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <i class="ph ph-star"></i>
+      <div class="stat-info">
+        <h3>4.8</h3>
+        <p>Avg Rating</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/sessions.js"></script>
 </body>
 </html>

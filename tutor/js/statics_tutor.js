@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="tutor-email">${tutor.email}</p>
                 <div class="tutor-meta">
                     <span class="rating">⭐ ${tutor.rating}</span>
-           
+            
                 </div>
                 <button class="book-session-btn">Book Session</button>
             </div>
